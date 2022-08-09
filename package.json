@@ -4,7 +4,7 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack-dev-server",
+    "start": "webpack-dev-server",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

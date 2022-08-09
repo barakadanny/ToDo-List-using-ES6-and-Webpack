@@ -6,10 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List ES6 Webpack</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <h1>here is the body </h1>
+    <main>
+        <div class="main-content">
+            <div class="content-header">
+                <h1 class="main-title">Today's To Do</h1>
+                <form action="index.html" method="post">
+                    <input type="text" name="todo" id="todo" class="todo" placeholder="Add to your list...">
+                </form>
+            </div>
+            <div class="todo-generate">
+                <ul class="todo-list">
+                </ul>
+                <button class="btn">Clear all completed</button>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

@@ -54,7 +54,7 @@ main {
   color: var(--text-color);
 }
 
-.todo {
+.todo-desc {
   width: 100%;
   border: 1px solid var(--gray-color);
   padding: 0.8rem;

@@ -3,17 +3,17 @@ import './style.css';
 // todo list object
 const todoList = [
   {
-    index: 1,
+    id: 1,
     completed: false,
     description: 'Learn React',
   },
   {
-    index: 2,
+    id: 2,
     completed: false,
     description: 'Learn Redux',
   },
   {
-    index: 3,
+    id: 3,
     completed: false,
     description: 'Learn React Router',
   },

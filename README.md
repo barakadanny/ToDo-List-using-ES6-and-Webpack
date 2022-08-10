@@ -1,56 +1,39 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# ToDo List
 
-# Project Name
-
-> Description the project.
-
+> This is a todo list with following features: possibility to add and mark a task as complete but also delete it, possibility to drag and drop a created task to change it place on the DOM
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- html
+- Css
+- JavaScript
+- Webpack
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+Not yet available
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+to get started with this project clone it with `git clone https://github.com/barakadanny/ToDo-List-using-ES6-and-Webpack.git `
 
 ### Prerequisites
 
+- basic knowledge of html, css, js and webpack
+
 ### Setup
 
-### Install
+Follow these steps to install this projects:
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- after cloning the project and it's finally locally in your laptop
+- run `npm install` to install all the dependencies
+- run `npm run build` to build the project in the `dist` folder
+- run `npm start` to start the webpack dev server
+- open the browser and go to `localhost:8080`
 
 ## Authors
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Baraka Danny (Me)**
 
 ## 🤝 Contributing
 

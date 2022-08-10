@@ -26,8 +26,8 @@ class Displaytodo {
 
     todoItem.innerHTML = `
     <div class="data">
-        <input type="checkbox" id="todo">
-        <label for="todo-1">${newTodo.description}</label>
+        <input  type="checkbox" id="todo-stat">
+        <label for="todo-1" class="data-desc">${newTodo.description}</label>
     </div>
     <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
   `;
@@ -69,3 +69,22 @@ form.addEventListener('submit', (e) => {
 });
 
 Displaytodo.getLocalStorage();
+
+// const checkbox = document.querySelector('#todo-stat');
+// checkbox.addEventListener('change', (e) => {
+//   // const todo = e.target.parentNode.parentNode;
+//   // todo.classList.toggle('completed');
+//   console.log('checkbox cliqued');
+// });
+
+// select all checkboxes
+const checkboxes = document.querySelectorAll('#todo-stat');
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener('change', (e) => {
+    const todo = e.target.nextElementSibling;
+    // todo.classList.toggle('completed');
+    todo.classList.toggle('completed');
+
+    console.log(todo);
+  });
+});

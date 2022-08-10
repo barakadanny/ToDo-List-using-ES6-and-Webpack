@@ -80,6 +80,11 @@ main {
   margin-right: 0.5rem;
 }
 
+.data-desc.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
 .todo-item span {
   cursor: all-scroll;
 }

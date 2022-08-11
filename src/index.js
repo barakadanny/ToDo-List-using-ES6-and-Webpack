@@ -24,10 +24,17 @@ class Displaytodo {
     const todoItem = document.createElement('li');
     todoItem.classList.add('todo-item');
 
+    // const completed boolean value from local storage
+    const { completed } = JSON.parse(localStorage.getItem('todos'))[index];
+
     todoItem.innerHTML = `
     <div class="data">
-        <input type="checkbox" id="todo-stat" data-check="${newTodo.completed}">
-        <label for="todo-1" data-id="${newTodo.id}"  class="data-desc">${newTodo.description}, ${newTodo.completed}</label>
+        <input type="checkbox" id="todo-stat" data-check="${completed}" ${
+  completed ? 'checked' : ''
+}>
+        <label for="todo-1" data-id="${newTodo.id}"  class="data-desc">${
+  newTodo.description
+}</label>
     </div>
     <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
   `;
@@ -82,12 +89,12 @@ checkboxes.forEach((checkbox) => {
     // find element in the localStorage
     const todos = JSON.parse(localStorage.getItem('todos'));
 
-    let idObj = todos.find((o) => o.id === parseInt(TodoID, 10));
+    const idObj = todos.find((o) => o.id === parseInt(TodoID, 10));
     const statUpdate = idObj.completed;
 
     // update todo completed in localStorage
-    idObj.completed = statUpdate === true ? false : true;
+    idObj.completed = statUpdate !== true;
     localStorage.setItem('todos', JSON.stringify(todos));
-    console.log(todos);
+    console.log(typeof statUpdate);
   });
 });

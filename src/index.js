@@ -1,39 +1,36 @@
 import './style.css';
+import displayTasks from './populateTaskList.js';
+import AddToDoList from './addRemoveTask.js';
 
-// todo list object
-const todoList = [
-  {
-    id: 1,
-    completed: false,
-    description: 'Learn React',
-  },
-  {
-    id: 2,
-    completed: false,
-    description: 'Learn Redux',
-  },
-  {
-    id: 3,
-    completed: false,
-    description: 'Learn React Router',
-  },
-];
+const taskList = new AddToDoList();
+displayTasks(taskList);
 
-const todoListElement = document.querySelector('.todo-list');
+const addTodoBtn = document.getElementById('addTask');
+addTodoBtn.addEventListener('click', () => {
+  const id = `id${Math.random().toString(16).slice(2)}`;
+  const description = document.getElementById('task').value.trim();
+  const completed = false;
+  const index = taskList.list.length + 1;
 
-// generate dynamic todo list
-for (let i = 0; i < todoList.length; i += 1) {
-  const todoD = todoList[i];
+  const newTask = {
+    id,
+    description,
+    completed,
+    index,
+  };
+  if (description) {
+    taskList.addTask(newTask);
+    displayTasks(taskList);
+  }
+});
 
-  const todoItem = document.createElement('li');
-  todoItem.classList.add('todo-item');
+const clearBtn = document.getElementById('clear-btn');
+clearBtn.addEventListener('click', () => {
+  taskList.clearCompletedTask();
+  displayTasks(taskList);
+});
 
-  todoItem.innerHTML = `
-    <div class="data">
-        <input type="checkbox" id="todo">
-        <label for="todo-1">${todoD.description}</label>
-    </div>
-    <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
-  `;
-  todoListElement.appendChild(todoItem);
-}
+const refreshPage = document.getElementById('refreshBtn');
+refreshPage.addEventListener('click', () => {
+  window.location.reload();
+});

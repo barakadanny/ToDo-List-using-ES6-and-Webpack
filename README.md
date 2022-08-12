@@ -35,6 +35,9 @@ Follow these steps to install this projects:
 
 👤 **Baraka Danny (Me)**
 
+- GitHub: [@barakadan](https://github.com/barakadanny)
+- LinkedIn: [danny baraka](https://www.linkedin.com/in/danny-baraka-589156169/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

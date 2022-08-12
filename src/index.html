@@ -14,21 +14,26 @@
 <body>
     <main>
         <div class="main-content">
-            <div class="content-header">
-                <div class="top-header">
-                    <h1 class="main-title">Today's To Do</h1>
-                    <i class="fa fa-refresh" aria-hidden="true"></i>
-                </div>
-                <form>
-                    <input type="text" name="todo" id="todo" class="todo-desc" placeholder="Add to your list...">
+            <div class="head-container">
+                <h1 class="title">Today's To Do</h1>
+                <button type="button" id="refreshBtn"><i id="refresh" class="fa-solid fa-arrows-rotate fa-xl"></i></button>
+            </div>
+            <div class="form-container">
+                <form id="taskList">
+                    <input id="task" placeholder="Add to your list" type="text" name="Task" autofocus />
+                    <button type="submit" id="addTask"><span id="enter" class="material-symbols-outlined">
+                            keyboard_return
+                        </span></button>
                 </form>
             </div>
-            <div class="todo-generate">
-                <ul class="todo-list">
-                </ul>
-                <button class="btn">Clear all completed</button>
+            <div id="task-container">
+    
             </div>
         </div>
+        <div class="clear-container">
+            <button type="submit" id="clear-btn">Clear All Completed</button>
+        </div>
+    
     </main>
 </body>
 

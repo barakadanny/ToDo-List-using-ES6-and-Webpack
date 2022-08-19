@@ -1,5 +1,9 @@
 import AddToDoList from '../src/addRemoveTask';
 
+const newItem = require('../__mocks__/localstorage.js');
+
+global.localStorage = newItem;
+
 const todoList = new AddToDoList();
 
 describe('Add and Remove a task', () => {

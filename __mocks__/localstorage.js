@@ -1,4 +1,4 @@
-class localStorage {
+class LocalStorage {
   constructor() {
     this.TaskList = {};
   }
@@ -20,6 +20,6 @@ class localStorage {
   }
 }
 
-const newItem = new localStorage();
+const newItem = new LocalStorage();
 
 module.exports = newItem;

@@ -1,4 +1,4 @@
-import AddToDoList from '../src/addRemoveTask';
+import AddToDoList from '../src/addRemoveTask.js';
 
 const newItem = require('../__mocks__/localstorage.js');
 

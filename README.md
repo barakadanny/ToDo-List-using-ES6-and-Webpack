@@ -148,14 +148,14 @@ Feel free to check the [issues page](https://github.com/barakadanny/ToDo-List-us
 
 ## ⭐️ Show your support <a name="support"></a>
 
-By giving Fit Me Up a star, you are helping to raise its visibility and bring it to the attention of others who might be interested in using it or contributing to its development.
+By giving a star, you are helping to raise its visibility and bring it to the attention of others who might be interested in using it or contributing to its development.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-I give credit to [@Cindy Shin](https://www.behance.net/adagio07) for his design was essential in the implementation of this project
+I give credit to code camp for this amazing [video](https://www.youtube.com/watch?v=MpGLUVbqoYQ) that help reshape my knoweldge in webpack.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
